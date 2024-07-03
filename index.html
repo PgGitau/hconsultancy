@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Consultant</title>
+
+    <!-- OUTFIT FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./src/assets/favicon/site.webmanifest">
+
+    <!-- FONT AWESOME -->
+  <link href="./src/assets/vendor/fontawesome/css/all.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="./main.js" defer></script>
+
+</head>
+
+<body>
+    <!-- NAV -->
+    <nav class="nav-container flex">
+        <div class="top-nav">
+            <ul class="flex">
+                <li>
+                    <a href="tel:+0700 000 000">0700 000 000</a>
+                </li>
+        
+                <li>
+                    <a href="mailto:hpractitioners@mail.com">hpractitioners@mail.com</a>
+                </li>
+        
+                <li>
+                    <a href="">Tiktok</a>
+                    <a href="">Facebook</a>
+                    <a href="">Youtube</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bottom-nav flex">
+            <div class="logo">
+                <p>Hconsultants</p>
+            </div>
+    
+            <div class="nav-list">
+                <ul class="flex">
+                    <li>
+                        <a href="./">Home</a>
+                    </li>
+    
+                    <li>
+                        <a href="">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero-container flex">
+        <div class="heroimage-container flex">
+            <img src="./src/assets/Images/user.jpg" alt="">
+        </div>
+
+        <div class="herotext-container flex">
+                <h1>Find your path to wellness with expert nutritional guidance</h1>
+
+                <div class="herotext-text">
+                    <p>Revitalize your health with tailored herbal and nutritional advice. We provide solutions for a healthier, balanced life.</p>
+                </div>
+
+                <div class="herotext-link flex">
+                    <a class="call" href="tel:+0700 000 000">CALL NOW</a>
+                    
+                    <a class="learn" href="#">LEARN MORE</a>
+                </div>
+        </div>
+
+    </div>
+
+    <!-- SERVICES -->
+    <section class="services-container grid">
+        <div class="services-content flex">
+            <p>We offer customized nutritional counseling, herbal remedies, and wellness plans designed to meet your unique health needs. Whether you're seeking to improve your diet, manage a health condition, or enhance your overall vitality, our holistic approach ensures you receive the support and resources you need to thrive.
+            </p>
+        </div>
+
+        <div class="services-card flex">
+            <div class="service-card">
+                <div class="card-header">
+                    <div class="card-number"></div>
+
+                    <div class="card-icon"></div>
+                </div>
+
+                <div class="card-about">
+                    <h2></h2>
+
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-header">
+                    <div class="card-number"></div>
+
+                    <div class="card-icon"></div>
+                </div>
+
+                <div class="card-about">
+                    <h2></h2>
+
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-header">
+                    <div class="card-number"></div>
+
+                    <div class="card-icon"></div>
+                </div>
+
+                <div class="card-about">
+                    <h2></h2>
+
+                    <p></p>
+                </div>
+            </div>
+
+        </div>
+
+        
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-container grid">
+        <div class="cta-image">
+            <img src="./src/assets/Images/nutrition.jpg" alt="">
+        </div>
+
+        <div class="cta-content flex">
+            <div class="cta-header">
+                <h2></h2>
+            </div>
+
+            <div class="cta-info">
+                <div class="mobile">
+                    <a href="tel:+">0700 000 000</a>
+                </div>
+
+                <div class="location">
+                    <ul>
+                        <li>
+                            <p>location</p>
+                        </li>
+
+                        <li>
+                            <p>time/days</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="form">
+                    <form class="form" id="myForm" action="" method="POST" class="flex">
+                        <!-- HONEYPOT(to catch spammers )  -->
+                       <input type="text" name="_honey" class="honeypot" title="honeypot">
+        
+                        <div class="label-float form-controls">
+                          <input id="name" name="name" type="text" placeholder=" " autocomplete="name" required>
+                          <label for="name">Name</label>
+                        </div>
+        
+                        <div class="label-float form-controls">
+                          <input id="email" name="email" type="email" placeholder=" " autocomplete="email" required>
+                          <label for="email">Email</label>
+                        </div>
+        
+                        <div class="label-float textarea form-controls">
+                            <textarea id="message" name="message" type="t" placeholder=" " required></textarea>
+                            <label for="message">Message / Question</label>
+                        </div>
+           
+                       <div class="form-controls form-btn form-submit">
+                           <button type="submit" >Submit</button>
+                       </div>
+                   </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY ME -->
+    <section class="why-container grid">
+        <div class="why-header flex">
+            <h2>WHY CHOOSE ME</h2>
+        </div>
+
+        <div class="why-content flex">
+            <div class="why-data"></div>
+
+            <div class="why-info">
+                <div class="testimonials"></div>
+
+                <div class="video"></div>
+            </div>
+        </div>
+    </section>
+
+     <!-- FAQ -->
+    <section class="faq-container flex">
+        <h2>Do you have any Questions. View the FAQs below or <a href="tel:+25407000000">Contact Us</a></h2>
+        <div class="accordion">
+            <div>
+                <input type="radio" name="faq-accordion" id="question1" checked class="accordion-input">
+                <label for="question1" class="accordion-label flex">
+                    &#x2022; What is the average cost for your consultancy?
+                    <i *ngIf="isShowContent" class="fa-solid fa-minus"></i>
+                    <i *ngIf="!isShowContent" class="fa-solid fa-plus"></i>
+                </label>
+                <div class="accordion-content">
+                    <p>The average cost for a website can vary greatly depending on many factors such as the type of website, its complexity, features, design requirements, and the level of expertise required to build it.
+                        For a rough estimate please send the details of your website by filling the <a href="#myForm">form above.</a>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <input type="radio" name="faq-accordion" id="question2" class="accordion-input">
+                <label for="question2" class="accordion-label flex">
+                    &#x2022; How long will I wait for my website to be ready?
+                    <i *ngIf="isShowContent" class="fa-solid fa-minus"></i>
+                    <i *ngIf="!isShowContent" class="fa-solid fa-plus"></i>
+                </label>
+                <div class="accordion-content">
+                    <p>The time it takes to build a website can vary depending on various factors such as the complexity of the website, its
+                        features, and the level of customization required. For a simple website with a few pages, it may take anywhere from
+                        a few days to a couple of weeks to complete. On the other hand, a more complex website with advanced functionality,
+                        custom designs, and integrations may take several weeks or even months to complete.</p>
+                </div>
+            </div>
+
+            <div>
+                <input type="radio" name="faq-accordion" id="question3" class="accordion-input">
+                <label for="question3" class="accordion-label flex">
+                    &#x2022; Where do I start?
+                    <i *ngIf="isShowContent" class="fa-solid fa-minus"></i>
+                    <i *ngIf="!isShowContent" class="fa-solid fa-plus"></i>
+                </label>
+                <div class="accordion-content">
+                    <p> Give us a call at <a href="tel:+25407000000">+254 700 000 000</a> or fill the <a href="#form">form above </a> to get in touch with us.</p>
+                </div>
+            </div>
+
+            <div>
+                <input type="radio" name="faq-accordion" id="question4" class="accordion-input">
+                <label for="question4" class="accordion-label flex last">
+                    &#x2022; Do you offer technical support  24/7?
+                    <i *ngIf="isShowContent" id="minus" class="fa-solid fa-minus"></i>
+                    <i *ngIf="!isShowContent" id="plus" class="fa-solid fa-plus"></i>
+                </label>
+                <div class="accordion-content">
+                    <p>Yes. We offer support 24/7 in all business days from Monday to Friday. Just Call or text us at <a href="tel:+25407000000">+254 000 000 000 </a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOP -->
+    <section class="shop-container flex">        
+    </section>    
+
+    <!-- FOOTER -->
+    <footer class="flex">
+        <p>Designed by R3T3P</p>
+        <p>copyright 2024</p>
+    </footer>
+    
+</body>
+
+</html>
