@@ -89,52 +89,64 @@
     </div>
 
     <!-- SERVICES -->
-    <section class="services-container grid">
+    <section class="services-container flex">
         <div class="services-content flex">
-            <p>We offer customized nutritional counseling, herbal remedies, and wellness plans designed to meet your unique health needs. Whether you're seeking to improve your diet, manage a health condition, or enhance your overall vitality, our holistic approach ensures you receive the support and resources you need to thrive.
+            <p>We offer customized <span>nutritional counseling, herbal remedies, and wellness plans</span> designed to meet your unique health needs. Whether you're seeking to <span>improve your diet, manage a health condition, or enhance your overall vitality,</span> our holistic approach ensures you receive the support and resources you need to <span>thrive.</span>
             </p>
         </div>
 
         <div class="services-card flex">
-            <div class="service-card">
-                <div class="card-header">
-                    <div class="card-number"></div>
+            <div class="service-card consultation flex">
+                <div class="card-header flex">
+                    <div class="card-number">
+                        <span>01.</span>
+                    </div>
 
-                    <div class="card-icon"></div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-gauge"></i>
+                    </div>
                 </div>
 
-                <div class="card-about">
-                    <h2></h2>
+                <div class="card-about flex">
+                    <h2>Consultation</h2>
 
-                    <p></p>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="card-header">
-                    <div class="card-number"></div>
-
-                    <div class="card-icon"></div>
-                </div>
-
-                <div class="card-about">
-                    <h2></h2>
-
-                    <p></p>
+                    <p>Detailed health history assessment and nutritional and lifestyle evaluation.</p>
                 </div>
             </div>
 
-            <div class="service-card">
-                <div class="card-header">
-                    <div class="card-number"></div>
+            <div class="service-card flex counseling">
+                <div class="card-header flex">
+                    <div class="card-number">
+                        <span>02.</span>
+                    </div>
 
-                    <div class="card-icon"></div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
                 </div>
 
-                <div class="card-about">
-                    <h2></h2>
+                <div class="card-about flex">
+                    <h2>Nutritional Counseling</h2>
 
-                    <p></p>
+                    <p>Dietary education and guidance, personalized meal planning, and weight management strategies</p>
+                </div>
+            </div>
+
+            <div class="service-card flex medicine">
+                <div class="card-header flex">
+                    <div class="card-number">
+                        <span>03.</span>
+                    </div>
+
+                    <div class="card-icon">
+                        <i class="fa-solid fa-prescription-bottle-medical"></i>
+                    </div>
+                </div>
+
+                <div class="card-about flex">
+                    <h2>Herbal medicine consultation</h2>
+
+                    <p>Customized herbal recommendations, education on the benefits and uses of herbal remedies, advice on the safe and effective use of herbs.</p>
                 </div>
             </div>
 
@@ -144,35 +156,21 @@
     </section>
 
     <!-- CTA -->
-    <section class="cta-container grid">
+    <section class="cta-container flex">
         <div class="cta-image">
             <img src="./src/assets/Images/nutrition.jpg" alt="">
         </div>
 
         <div class="cta-content flex">
-            <div class="cta-header">
-                <h2></h2>
+            <div class="cta-header flex">
+                <h2>GET IN TOUCH WITH US</h2>
             </div>
 
-            <div class="cta-info">
-                <div class="mobile">
-                    <a href="tel:+">0700 000 000</a>
-                </div>
+            
 
-                <div class="location">
-                    <ul>
-                        <li>
-                            <p>location</p>
-                        </li>
-
-                        <li>
-                            <p>time/days</p>
-                        </li>
-                    </ul>
-                </div>
-
+            <div class="cta-info flex">
                 <div class="form">
-                    <form class="form" id="myForm" action="" method="POST" class="flex">
+                    <form class="form grid" id="myForm" action="" method="POST" class="flex">
                         <!-- HONEYPOT(to catch spammers )  -->
                        <input type="text" name="_honey" class="honeypot" title="honeypot">
         
@@ -195,6 +193,23 @@
                            <button type="submit" >Submit</button>
                        </div>
                    </form>
+                </div>
+
+                <div class="location flex">
+                    <div class="mobile flex">
+                        <h3>Mobile</h3>
+                        <a href="tel:+">0700 000 000</a>
+                    </div>
+    
+                    <div class="address flex">
+                        <h3>Address</h3>
+                        <p>Chungamali,<br>Limuru <br> Route 115/135</p>
+                    </div>
+    
+                    <div class="time flex">
+                        <h3>Days</h3>
+                        <p>All days except Thursday and Sunday: 8am - 5pm</p>
+                    </div>
                 </div>
             </div>
         </div>
