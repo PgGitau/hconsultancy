@@ -11,8 +11,12 @@ body {
 }
 
 body > * {
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
   /* border: 2px solid red; */
+}
+
+footer {
+  margin-bottom: 0;
 }
 
 img {
@@ -88,6 +92,7 @@ a {
 /* HERO */
 .hero-container {
   height: 600px;
+  margin-bottom: 5rem;
 }
 
 .hero-container > * {
@@ -157,7 +162,7 @@ a {
 .services-container {
   /* border: 2px solid red; */
   flex-direction: column;
-  gap: 4rem;
+  gap: 5rem;
 }
 
 .services-content p {
@@ -262,8 +267,9 @@ a {
 
 .why-header h2,
 .cta-header h2,
-.testimonials-header h2 {
-  font-size: 4rem;
+.testimonials-header h2,
+.faq-container h2 {
+  font-size: 2.5rem;
 }
 
 .why-info {
@@ -388,7 +394,7 @@ a {
   .cta-container {
     /* border: 2px solid red; */
     /* gap: 4rem; */
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
     /* justify-content: center;
     align-items: center; */
     /* width: 95%;
@@ -623,9 +629,18 @@ a {
 /* TESTIMONIALS */
 .testimonials-container {
   grid-template: auto / .4fr .6fr;
+  position: relative;
   /* height: 500px; */
   /* border: 2px solid red; */
   /* align-items: center; */
+}
+
+.fa-quote-left {
+  position: absolute;
+  top: 0;
+  left: 33px;
+  color: #7e7dff;
+  font-size: 4rem;
 }
 
 /* .testimonials-container > * {
@@ -636,7 +651,25 @@ a {
   align-self: center;
   padding-inline: 2rem;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
+}
+
+.testimonials-header a {
+  background: linear-gradient(to right, #7e7dff 0%, #7e7dff 100%);
+    width: 50%;
+    padding: 1rem 1.5rem;
+    border: 1px solid #7e7dff;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    transition: all 350ms ease-in-out;
+    cursor: pointer;
+}
+
+.testimonials-header a:hover {
+  color: #000000;
+  background: #fff;
+  border-color: #000;
 }
 
 .testimonials-content > * {
@@ -645,7 +678,7 @@ a {
 
 .testimonials-content {
   grid-template: repeat(3, 1fr) / 1fr;
-  gap: 3rem;
+  gap: 1rem;
   padding: 1rem;
 }
 
@@ -705,8 +738,6 @@ a {
 }
 
 .faq-container h2 {
-  font-size: 5rem;
-  line-height: 5rem;
   text-align: center;
 }
 
