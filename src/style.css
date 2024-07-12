@@ -529,22 +529,21 @@ a {
     height: 100%;
     /* align-self: center; */
     position: relative;
-    border-block: 1px solid #565f1e;
+    /* border-block: 1px solid #565f1e; */
     width: 30%;
     position: relative;
+    background-color: #696e2b;
   }
 
   .form-container::after {
-    position: absolute;
     content: '';
-    top: 50%;
+    top: 0;
     left: 0;
-      width: 0;
-      height: 0;
-      border-right: 20px solid transparent; 
-      border-top: 20px solid transparent;
-      border-bottom: 20px solid transparent;
-      border-left: 20px solid #676c2a;
+    height: 100%;
+    width: 100%;
+    background-color: #00000070;
+    position: absolute;
+    z-index: -1;
   }
 
   .form-header span {
@@ -559,9 +558,9 @@ a {
     grid-template: auto / 1fr;
     position: relative;
     overflow: hidden;
-    width: 70%;
-    margin-inline: auto;
-    /* border-radius: 5px; */
+    width: 95%;
+    /* margin-inline: auto; */
+    border-radius: 10px;
     height: 90%;
     justify-content: center;
     align-self: center;
