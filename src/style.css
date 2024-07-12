@@ -46,6 +46,7 @@ a {
   margin-bottom: 0;
   flex-direction: column;
   gap: .1rem;
+  padding-block: .5rem;
 }
 
 .nav-container > * {
@@ -53,10 +54,17 @@ a {
   padding: .8rem 2rem;
 }
 
-.top-nav {
+.nav-list {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* .top-nav {
   background-color: #ededed4a;
   border-bottom: 1px solid#0000000f;
-}
+} */
 
 .top-nav ul,
 .bottom-nav {
@@ -68,10 +76,13 @@ a {
   width: 100%;
   border-right: 1px solid #000;
   text-align: center;
+  padding-inline: 1rem;
 }
 
 .top-nav ul li:last-child {
-  border-right: none;
+  border-right: 1px solid black;
+    display: flex;
+    gap: 1rem;
 }
 
 .top-nav ul,
@@ -93,6 +104,19 @@ a {
 .hero-container {
   height: 600px;
   margin-bottom: 5rem;
+  position: relative;
+}
+
+.hero-container::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 75%;
+  height: 100%;
+  background-color: #e1d9ce;
+  z-index: -1;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .hero-container > * {
@@ -108,7 +132,7 @@ a {
   position: relative;
 }
 
-.heroimage-container::after {
+/* .heroimage-container::after {
   content: '';
   top: 20%;
   left: 0;
@@ -117,7 +141,7 @@ a {
   background-color: #d1c5b3a8;
   position: absolute;
   z-index: 1;
-}
+} */
 
 .heroimage-container img {
   border-radius: 10px;
@@ -654,6 +678,10 @@ a {
     gap: 2rem;
 }
 
+.testimonials-header p {
+  width: 70%;
+}
+
 .testimonials-header a {
   background: linear-gradient(to right, #7e7dff 0%, #7e7dff 100%);
     width: 50%;
@@ -662,7 +690,7 @@ a {
     border-radius: 10px;
     color: #fff;
     text-align: center;
-    transition: all 350ms ease-in-out;
+    transition: all 250ms ease-in-out;
     cursor: pointer;
 }
 
@@ -688,11 +716,12 @@ a {
   border-left: 10px solid #0000ff82;
   border-radius: 10px;
   padding: 1rem .5rem;
+  width: 90%;
+  margin-left: auto;
 }
 
 .testimony-card.half {
   width: 70%;
-  margin-left: auto;
   gap: 1rem;
 }
 
@@ -715,10 +744,15 @@ a {
 .user-testimony {
   flex-direction: column;
   gap: 1rem;
+  color: #000000a9;
+}
+
+.david .user-testimony {
+  color: #000;
 }
 
 .user-testimony p {
-  font-weight: 1.2rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
